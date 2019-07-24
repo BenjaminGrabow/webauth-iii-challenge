@@ -2,8 +2,8 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 
-const authRouter = require('../auth/auth-router.js');
-const usersRouter = require('../users/users-router.js');
+const authRouter = require('./auth/auth-router.js');
+const usersRouter = require('./users/users-router.js');
 
 const server = express();
 
@@ -18,4 +18,4 @@ server.get('/', (req, res) => {
   res.send("It's alive!");
 });
 
-module.exports = server;x
+module.exports = server;
